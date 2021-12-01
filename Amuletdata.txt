@@ -1,0 +1,560 @@
+{
+ "message": "I've asked the question 'what mobiles have been involved in call events with IDMOB1?'",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "IDMOB2, IDMOB3, IDMOB4", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "I probably would start with what other things are linked to IDMOB1. anything that is linked to it",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "IDMOB3", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "ok so I'll ask what is linked to IDMOB3 and add that to the graph",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "IDSusanLeech", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "then what is linked to IDMOB4 and add that as well",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "No results", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "What is susan leech linked to?",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "DomesticAssaultActivity", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "so I'd want to know who the offender was.",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "IDPaulRichards", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "so I'd want to know who the offender was.",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "IDPaulRichards", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "so how is paul richards linked to dan govey?",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "No results", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "so I would probably have looked what is the path between paul richards and dan govey in order to see if there is anything at all linking them through the database? The problem is that normally gets quite long",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "No results", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "what is IDPaulRichards linked to?",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "IDWatsonCustomMetalwork", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "Ok, which unsurprisingly sounds a bit like a company that might do bodywork. So I am intrigued what is the path between Watson Custom metalwork and DGX Bodywork?",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "IDSpitalfieldIndPark", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "what links are there to watson custom metalwork?",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "No results", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "what links are there to dgx bodywork?",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "No results", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "Can I ask a question like, who is employed by DGX Bodywork? I wont say visualise that one.",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "No results", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "can you also ask who is employed by IDWatsonCustomMetalwork?",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "IDShaunSpence", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "can we ask what is Shaun Spence linked to?",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "No results", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
+
+{
+ "message": "the two people I think I'd be most interested in are probably Paul Richards and Shaun Spence.",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}
+
+{ 
+ "answer": { 
+	"headline": "IDPaulRichards, IDShaunSpence", 
+	"cues": [ 
+		{ 
+			"offset": 5, 
+			"type": "class", 
+			"value": "Mobile", 
+			"resolved": "http://example.org/classes#MobilePhone" 
+		}, 
+		{ 
+			"offset": 25, 
+			"type": "instance", 
+			"value": "123456789", 
+			"resolved": "http://example.org/data#IDMOB1" 
+		} 
+	], 
+	"nodes": 12, 
+	"edges": 16, 
+	"data": "…OMMITTED RDF…", 
+	"operation": "add", 
+	"explanation": "…OMMITTED RDF…"
+}}
