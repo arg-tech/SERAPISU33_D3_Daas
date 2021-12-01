@@ -10,7 +10,7 @@ COPY package*.json ./
 
 RUN npm install
 RUN npm install request
-RUN nom install form-data
+RUN npm install form-data
 
 # If you are building your code for production
 # RUN npm ci --only=production

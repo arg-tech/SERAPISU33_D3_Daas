@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+ daas-ic:
+  container_name: daas-ic
+  build: .
+  ports:
+  - "8181:5000"
