@@ -5,4 +5,4 @@ services:
   container_name: daas-ic
   build: .
   ports:
-  - "8181:5000"
+  - "8181:3000"
