@@ -12,6 +12,7 @@ npm install  (if not existed)
 It also requires to install the "request" and "form-data" modules:
 
 npm install request
+
 npm install form-data
 
 # How to run the tool
