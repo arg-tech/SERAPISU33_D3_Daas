@@ -15,6 +15,9 @@ It also requires to install the "request" and "form-data" modules:
 
 - npm install form-data
 
+Then:
+- node index.js
+
 # Run the tool
 
 In the Amuletdata.txt there is a sequence of question-answer exchange between 
