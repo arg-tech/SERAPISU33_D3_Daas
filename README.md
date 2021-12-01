@@ -23,8 +23,7 @@ The service can also be called from code via calls to the url (in local executio
 
 http://127.0.0.1:3000/move
 
-via a post method giving the message (question/answer) expressed in the amulet
-format as input and it returns json data that includes the responding locutions
-(if there are any) from daas
+with a post method, the data of which is the message (question/answer) expressed in the amulet
+format and returns json data that includes the responding locutions (if there are any) from daas
 
 
