@@ -10,6 +10,7 @@ var FormData = require('form-data');
 
 nodeID_cnt = 1;
 edgeID_cnt = 1;
+prev_numobj = [];
 
 QICTurn_check = 0;
 CBTurn_check = 0;
@@ -63,7 +64,6 @@ function clear_history(){
     nodeID_cnt = 1;
     edgeID_cnt = 1;
     QICTurn_check = 1;
-	CBTurn_check = 1;
     ready_to_callAMF = false;
 
 }
@@ -88,7 +88,6 @@ function amf_request(filepath) {
             resultsdata = JSON.stringify(body);
             fs.writeFileSync(resultfname, body);
             QICTurn_check = 0;
-			CBTurn_check = 0;
             resultsCreated = true;
         });
     });
@@ -115,25 +114,21 @@ function get_response(locution) {
 
 function get_CB_response(locution) {
     var CB_resp;
-    var prev_numobj;
 	if (locution['content'] != ""){
 		var numobj = RegExp(/[A-Z]{5}\d{1}/).exec(locution['content']);
-     //   console.log(numobj);
-        if(CBTurn_check == 1) {
-			// This should return IDMOB3 after the first two turns
-            prev_numobj = numobj;
+        if(! Array.isArray(numobj)){
+            numobj = [];
+        }
+        if(CBTurn_check == 0) {
             CB_resp = null;
-            
-        } else if (Array.isArray(numobj) && numobj.length !== 0 && numobj == prev_numobj) {
-			
+        } else if (Array.isArray(numobj) && numobj.length !== 0 && numobj[0] == prev_numobj[0]) {
             resp = "You are very focused on " + numobj[0] + ". Are you sure that there are no reasons for considering an alternative?";
-           
             move = {"speaker": "CBAgent", "content": resp};
-            QIC_resp = move;
-            
+            CB_resp = move;
         } else {
             CB_resp = null;
         }
+        prev_numobj = numobj;
 	}
 	CBTurn_check++;
     return CB_resp;
