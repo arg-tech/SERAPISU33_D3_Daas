@@ -15,7 +15,7 @@ It also requires to install the "request" and "form-data" modules:
 
 - npm install form-data
 
-# How to run the tool
+# Run the tool
 
 In the Amuletdata.txt there is a sequence of question-answer exchange between 
 Amulet and the user which can be given as input (one-to-one) to the interface.
