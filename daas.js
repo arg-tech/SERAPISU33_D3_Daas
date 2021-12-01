@@ -29,14 +29,17 @@ message_history = [];
 communicated_responses = [];
 
 function clear_responses(){
+  
+    console.log("IN CLEAR RESPONSES");
     available_responses = [];
     message_history = [];
     communicated_responses = [];
-   
+    resultsCreated = false;
    
     try {
          if (fs.existsSync(resultfname)) {
              fs.unlinkSync(resultfname);
+             console.log("File cleared");
         }
     }  catch(err) {
         console.error(err)
@@ -113,23 +116,30 @@ function get_response(locution) {
 
 
 function get_CB_response(locution) {
-   /* var CB_resp;
+    var CB_resp;
     var prev_numobj;
     console.log(locution['content']);
 	if (locution['content'] != ""){
 		var numobj = RegExp(/[A-Z]{5}\d{1}/).exec(locution['content']);
+        console.log(numobj);
         if(CBTurn_check == 1) {
 			// This should return IDMOB3 after the first two turns
             prev_numobj = numobj;
             CB_resp = null;
-        } else if (numobj == prev_numobj) {
-			CB_resp = "You are very focused on " + numobj[0] + ". Are you sure that there are no reasons for considering an alternative?";
+            
+        } else if (Array.isArray(numobj) && numobj.length !== 0 && numobj == prev_numobj) {
+			
+            resp = "You are very focused on " + numobj[0] + ". Are you sure that there are no reasons for considering an alternative?";
+           
+            move = {"speaker": "CBAgent", "content": resp};
+            QIC_resp = move;
+            
         } else {
             CB_resp = null;
         }
 	}
 	CBTurn_check++;
-    return CB_resp;*/
+    return CB_resp;
 }
 
 function get_QIC_response(locution) {
