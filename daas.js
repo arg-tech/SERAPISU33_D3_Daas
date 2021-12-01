@@ -29,8 +29,7 @@ message_history = [];
 communicated_responses = [];
 
 function clear_responses(){
-  
-    console.log("IN CLEAR RESPONSES");
+
     available_responses = [];
     message_history = [];
     communicated_responses = [];
@@ -39,7 +38,6 @@ function clear_responses(){
     try {
          if (fs.existsSync(resultfname)) {
              fs.unlinkSync(resultfname);
-             console.log("File cleared");
         }
     }  catch(err) {
         console.error(err)
@@ -85,8 +83,8 @@ function amf_request(filepath) {
             body += chunk;
         });
         res.on('end', function() {
-            console.log('Results');
-            console.log(body);
+            //console.log('Results');
+            //console.log(body);
             resultsdata = JSON.stringify(body);
             fs.writeFileSync(resultfname, body);
             QICTurn_check = 0;
@@ -118,10 +116,9 @@ function get_response(locution) {
 function get_CB_response(locution) {
     var CB_resp;
     var prev_numobj;
-    console.log(locution['content']);
 	if (locution['content'] != ""){
 		var numobj = RegExp(/[A-Z]{5}\d{1}/).exec(locution['content']);
-        console.log(numobj);
+     //   console.log(numobj);
         if(CBTurn_check == 1) {
 			// This should return IDMOB3 after the first two turns
             prev_numobj = numobj;
@@ -146,7 +143,7 @@ function get_QIC_response(locution) {
     var QIC_resp;
     message_history.push(locution);
 
-    console.log(locution);
+  //  console.log(locution);
     if(QICTurn_check == 3) {
        callAMF = true;
     }
@@ -161,8 +158,8 @@ function get_QIC_response(locution) {
 
         fs.writeFileSync(filepath, amf_json_str);
 
-        console.log("Calling AMF....");
-        console.log(amf_json_str);
+      //  console.log("Calling AMF....");
+    //    console.log(amf_json_str);
         amf_request(filepath);
 
         callAMF = false;
