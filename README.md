@@ -9,7 +9,7 @@ Download the folder and in the downloaded directory run:
 
 npm install  (if not existed)
 
-It also requires to install the request and form-data modules:
+It also requires to install the "request" and "form-data" modules:
 
 npm install request
 npm install form-data
