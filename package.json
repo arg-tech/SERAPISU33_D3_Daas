@@ -1,0 +1,16 @@
+{
+  "name": "daas-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "John Lawrence <john@arg.tech>",
+  "license": "LGPL",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.1",
+    "form-data": "^4.0.0",
+    "request": "^2.88.2",
+    "xhr2": "^0.2.1"
+  }
+}

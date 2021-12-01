@@ -1,0 +1,84 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+<br />
+  <h2>API Test</h2>
+    <!--{ "message": "What Mobiles are linked to 07123456789",
+  "slots": [ {
+      "value": "Mobiles",
+      "type": "class",
+      "resolved": "http://example.org/classes#Device",
+      "offset": 5
+} ]}-->
+  <form id="my-form">
+    <div class="form-group">
+      <label for="input">Input:</label>
+      <textarea class="form-control" rows="8" id="input">
+{ "answer": { 
+"headline": "**8 direct connections** with of type MobilePhone were found.", 
+"cues": [ 
+{ 
+"offset": 5, 
+"type": "class", 
+"value": "Mobile", 
+"resolved": "http://example.org/classes#MobilePhone" 
+}, 
+{ 
+"offset": 25, 
+"type": "instance", 
+"value": "123456789", 
+"resolved": "http://example.org/data#IDMOB1" 
+} 
+], 
+"nodes": 12, 
+"edges": 16, 
+"data": "…OMMITTED RDF…", 
+"operation": "add", 
+"explanation": "…OMMITTED RDF…"
+}}
+      
+      </textarea>
+      <br />
+      <label for="output">Output:</label>
+      <textarea class="form-control" rows="8" id="output"></textarea>
+      <br />
+      <br />
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+<script>
+    (function($){
+        function processForm( e ){
+            $.ajax({
+               // url: 'http://daastest.arg.tech/move',
+                url: 'http://127.0.0.1:3000/move',
+                dataType: 'text',
+                type: 'post',
+                contentType: 'application/json',
+                data: $('#input').val(),
+                success: function( data, textStatus, jQxhr ){
+                    $('#output').val( data );
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    $('#output').val( errorThrown );
+                }
+            });
+
+            e.preventDefault();
+        }
+
+        $('#my-form').submit( processForm );
+    })(jQuery);
+</script>
+
+
+</body>
+</html>
