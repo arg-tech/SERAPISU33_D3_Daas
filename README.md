@@ -7,13 +7,13 @@ docker-compose up
 Alternatively, if it won't work:
 Download the folder and in the downloaded directory run:
 
-npm install  (if not existed)
+- npm install  (if not existed)
 
 It also requires to install the "request" and "form-data" modules:
 
-npm install request
+- npm install request
 
-npm install form-data
+- npm install form-data
 
 # How to run the tool
 
