@@ -25,7 +25,7 @@ Amulet and the user which can be given as input (one-to-one) to the interface.
 
 The service can also be called from code via calls to the url (in local execution):
 
-http://127.0.0.1:{port}/move
+http://127.0.0.1:3000/move
 
 with a post method, the data of which is the message (question/answer) expressed in the amulet
 format and returns json data that includes the responding locutions (if there are any) from daas
